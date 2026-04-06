@@ -28,9 +28,36 @@
 				font-size: 2em;
 				padding: 5px;
 				font-weight: bold;
+				position: absolute;
+				left: 750px;
+				top: 125px;
+				transition: all 2s;
 			}
 			#deck div:hover{
 				border: 3px solid yellow;
+			}
+			#deck:hover div:first-child{
+				transform: rotate(-45deg); /* Standard syntax */
+				transform-origin: bottom left;
+
+			}
+			#deck:hover div:nth-child(2){
+				transform: rotate(-30deg); /* Standard syntax */
+				transform-origin: bottom left;
+
+			}
+			#deck:hover div:nth-child(3){
+				transform: rotate(-15deg); /* Standard syntax */
+				transform-origin: bottom left;
+
+			}
+			#deck:hover div:nth-child(4){
+				transform: rotate(-5deg); /* Standard syntax */
+				transform-origin: bottom left;
+			}
+			#deck:hover div:nth-child(5){
+				transform: rotate(10deg); /* Standard syntax */
+				transform-origin:  bottom left;
 			}
 			#deck div:first-child:hover{
 				background-color: yellow;
